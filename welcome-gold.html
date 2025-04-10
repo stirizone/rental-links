@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +14,13 @@
       padding: 2rem;
       line-height: 1.6;
     }
-    h1 { font-family: 'Great Vibes', cursive; font-size: 6rem; text-align: center; margin-top: 1rem; margin-bottom: -3rem; }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 6rem;
+      text-align: center;
+      margin-top: 1rem;
+      margin-bottom: -3rem;
+    }
     h2 {
       text-align: center;
     }
@@ -26,14 +31,18 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      align-items: stretch;
     }
     .col {
       flex: 1 1 45%;
       margin-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     .qr {
       width: 120px;
-      margin-top: 1rem;
+      margin: 1rem auto 0;
     }
     ul {
       padding-left: 1.2rem;
@@ -46,14 +55,14 @@
 
   <div class="columns">
     <div class="col section">
-        <h3>Contacts</h3>
+      <h3>Contacts</h3>
       <p><strong>Host:</strong> Maximilian<br>
       <strong>Phone:</strong> +43 670 2033790<br>
       <strong>Preferred:</strong> Airbnb / Booking.com messaging</p>
     </div>
 
     <div class="col section">
-        <h3>Check-In / Check-Out</h3>
+      <h3>Check-In / Check-Out</h3>
       <p><strong>Check-In:</strong> from 16:00<br>
       <strong>Check-Out:</strong> by 11:00<br>
       Early or late checkout possible for a fee - contact us.</p>
@@ -69,15 +78,15 @@
         <li>No outside visitors</li>
         <li>No smoking</li>
         <li>Respect quiet hours (22:00–07:00)</li>
-        <img src="https://stirizone.github.io/rental-links/house_rules_qr_gold.png" alt="House Rules QR Code" class="qr">
       </ul>
+      <img src="https://stirizone.github.io/rental-links/house_rules_qr_gold.png" alt="House Rules QR Code" class="qr">
     </div>
 
     <div class="col section">
       <h3>Wi-Fi</h3>
       <p><strong>Network:</strong> TP-Link_049A<br>
       <strong>Password:</strong> 68828073</p>
-      <img src="https://stirizone.github.io/rental-links/wi-fi_qr_gold.png" alt="Wifi QR Code" class="qr">
+      <img src="https://stirizone.github.io/rental-links/wi-fi_qr_gold.png" alt="Wi-Fi QR Code" class="qr">
     </div>
   </div>
 
