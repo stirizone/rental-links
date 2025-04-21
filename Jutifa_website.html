@@ -34,15 +34,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     header {
       position: relative;
-      height: 60vh;
+      min-height: 60vh;
       background: url('https://stirizone.github.io/rental-links/Hero_jutifa_logo.jpg') center/cover no-repeat;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 0 12%;
-      overflow: hidden;
+      padding: 4rem 12%;
     }
     header::before {
       content: '';
@@ -131,7 +130,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <header>
     <div class="logo"><img src="https://stirizone.github.io/rental-links/Jutifa_logo.png" alt="Jutifa Calisthenics"></div>
     <h1>Jutifa Calisthenics</h1>
-    <p>Trainiere mit der Natur, verwurzelt in Tradition – dein Premium-Calisthenics-Erlebnis in der Obersteiermark.</p>
+    <p>Trainiere mit der Natur, verwurzelt in Tradition – dein Premium-Calisthenics-Erlebnis in Zentralsteiermark.</p>
     <button class="btn-primary" onclick="document.getElementById('probetraining').scrollIntoView({ behavior: 'smooth' })">Kostenloses Probetraining</button>
   </header>
 
@@ -156,7 +155,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <section id="probetraining">
     <h2 class="section-title">Kostenloses Probetraining</h2>
     <?php if ($success): ?>
-      <div style="text-align:center; padding:2rem; font-size:1.25rem; font-weight:500;">Danke <?= \$name ?>! Wir melden uns bald bei dir.</div>
+      <div style="text-align:center; padding:2rem; font-size:1.25rem; font-weight:500;">Danke, <?= \$name ?>! Wir melden uns bald bei dir.</div>
     <?php else: ?>
       <div id="form-container">
         <form action="#" method="post">
